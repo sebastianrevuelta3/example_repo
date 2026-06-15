@@ -1,0 +1,7 @@
+name: Semgrep
+on:
+  push: {}
+jobs:
+  call-semgrep:
+    uses: {ORG}/{REPO}/.github/workflows/semgrep.yml@main
+    secrets: inherit
